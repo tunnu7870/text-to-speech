@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Speech</title>
+</head>
+<body>
+    <h1>Text To Speech </h1>
+    <textarea id="textbox" rows="5" cols="50"></textarea><br>
+    <button id="speakbtn" onclick="speak()"> speak</button>
+
+
+    <script>
+        function speak()
+        {
+            let synth= window.speechSynthesis;/* yaha pe hum window speech ko call kr rhe ha speak k liye ya fir yaha peweb speak api ko call kre j */
+            let voice= new SpeechSynthesisUtterance(textbox.value);/* yaha pe hum call kar rhe ha value ko jo ki  text value ko lega */
+            synth.speak(voice);/*yaha pe hum speak command de rhe ha to speak*/
+        }
+    </script>
+</body>
+</html>
