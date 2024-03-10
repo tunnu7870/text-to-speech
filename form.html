@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <!-- <input type="text" name="first name">
+    <input type="text" name="last name ">
+    <input type="password">
+    <input type="submit"> 
+    <input type="reset">
+    <input type="radio">
+    <input type="checkbox">
+    <input type="file">
+    <input type="textarea">
+    <select>
+        <option value="delhi"> Delhi</option>
+        <option value="punjab"> Punjab</option>
+        <option value="bihar"> Bihar</option>
+        <option value="UP"> UP</option>
+    </select> -->
+     <form action="">
+        <h1> Payment</h1>
+        <fieldset>
+            <legend> <h2>Name</h2></legend>
+          <p>FIRST NAME*: <input type="text" name="first name" required></p>
+         <p>SECOND NAME: <input type="text" name="last name"></p>
+       </fieldset>
+        <!-- <fieldset> esko use kiya jata ha rap k liye kisi v part ko -->
+       <fieldset>
+          <!-- <legend>es tag ka use kiya jata ha jo group ya jo rap kiye ha uska name dene k liye </legend> -->
+          <legend>
+            <h2>
+            Gender
+            </h2>
+          </legend>
+          <p>
+              Male <input type="radio" name="genderS" id="male">
+              Female <input type="radio" name="genderS" id="female">
+           </p>
+     </fieldset>
+     <fieldset>
+        <legend><h2>Address</h2></legend>
+         <p> Fill your full address*<textarea name="address" id="address" cols="100" rows="5" required></textarea>
+        </p>
+     </fieldset>
+     <fieldset>
+        <legend><h2>Contact</h2></legend>
+        <p>
+            Email*: <input type="email" name="email" id="email " required>
+        </p>
+     </fieldset>
+     <fieldset>
+        <legend><h2>Pincode</h2></legend>
+        <p>
+            Pincode*: <input type="number" name="pincode" id="pincode" required>
+        </p>
+     </fieldset>
+     <fieldset>
+        <legend><h2> Payment Details</h2></legend>
+        <p>
+            Card Type* 
+            <select name="card_type" id="card_type" required>
+                <option value="">--select card type--</option>
+                <option value="visa">visa</option>
+                <option value="rupee">rupee</option>
+                <option value="MAster Card">master card</option>
+                <option value="credit card">credit card</option>
+            </select>
+        </p>
+        <p>
+            card number*:<input type="number"  name=" card number" id=" card number " required>
+        </p>
+        <p>
+            card expiry*:<input type="date"  name="exp_date" id="exp_date" required> 
+        </p>
+        <p> 
+            CVV*: <input type="password" name="cvv" id="cvv" required>
+        </p>
+        <input type="submit" value="Pay Now">
+      </fieldset>
+      <p><h3>NOTE:Required*</h3></p>
+      <button>submit</button>
+     </form>
+</body>
+</html>
